@@ -18,9 +18,8 @@ const showPicture = () => {
     ({ name, accepttype, capturetype }) =>
       (output += `
               <div class="card">
-			  ${acceptype}
 			  
-                <input type="file" accept=${acceptype} capture=${capturetype}/>
+				<input type="file" accept="video/*" capture="environment"/>
               </div>
               `)
   );
