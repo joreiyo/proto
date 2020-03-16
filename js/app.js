@@ -1,7 +1,7 @@
 const container = document.querySelector(".container");
 const coffees = [
   {
-    name: "Explicabo",
+    name: "Camera View",
     image: "images/coffee3.jpg"
   }
 ];
@@ -11,7 +11,10 @@ const showPicture = () => {
     ({ name, image }) =>
       (output += `
               <div class="card">
-                <img class="card--avatar" src=${image} />
+                <input type="file" accept="image/*" capture="camera" />
+				
+				<img class="card--avatar" src=${image} />
+				
                 <h1 class="card--title">${name}</h1>
                 <a class="card--link" href="#">Save</a>
               </div>
