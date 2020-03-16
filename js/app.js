@@ -1,8 +1,14 @@
 const container = document.querySelector(".container");
-const coffees = [
+const inputtype = [
   {
-    name: "Camera View",
-    image: "images/coffee3.jpg"
+    name: "Picture",
+    accepttype: "image/*",
+	capturetype: "environment"
+  },
+  {
+    name: "Video",
+    accepttype: "video/*",
+	capturetype: "environment"
   }
 ];
 const showPicture = () => {
@@ -11,13 +17,7 @@ const showPicture = () => {
     ({ name, image }) =>
       (output += `
               <div class="card">
-                <input type="file" accept="image/*" />
-				
-				<!-- img class="card--avatar" src=${image} / -->
-				
-                <!-- h1 class="card--title">${name}</h1 -->
-				
-                <a class="card--link" href="#">Save</a>
+                <input type="file" accept=${acceptype} capture=${capturetype}/>
               </div>
               `)
   );
@@ -34,3 +34,9 @@ if ("serviceWorker" in navigator) {
       .catch(err => console.log("service worker not registered", err));
   });
 }
+
+
+
+
+
+
