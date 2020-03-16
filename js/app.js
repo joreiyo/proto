@@ -11,11 +11,12 @@ const showPicture = () => {
     ({ name, image }) =>
       (output += `
               <div class="card">
-                <input type="file" accept="image/*" capture="camera" />
+                <input type="file" accept="image/*" />
 				
-				<img class="card--avatar" src=${image} />
+				<!-- img class="card--avatar" src=${image} / -->
 				
-                <h1 class="card--title">${name}</h1>
+                <!-- h1 class="card--title">${name}</h1 -->
+				
                 <a class="card--link" href="#">Save</a>
               </div>
               `)
