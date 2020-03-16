@@ -8,7 +8,7 @@ const assets = [
 ];
 
 
-/*
+
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
@@ -24,7 +24,7 @@ self.addEventListener('activate', function(event) {
     })
   );
 });
-*/
+
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
