@@ -13,8 +13,8 @@ const inputtype = [
 ];
 const showPicture = () => {
   let output = "";
-  coffees.forEach(
-    ({ name, image }) =>
+  inputtype.forEach(
+    ({ name, accepttype, capturetype }) =>
       (output += `
               <div class="card">
                 <input type="file" accept=${acceptype} capture=${capturetype}/>
