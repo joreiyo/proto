@@ -47,5 +47,9 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ]
+  ],
+    "start_url": "/proto/index.html",
+    "display": "fullscreen",
+    "theme_color": "#B12A34",
+    "background_color": "#B12A34"
 }
